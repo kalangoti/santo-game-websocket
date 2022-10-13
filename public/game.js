@@ -2,6 +2,10 @@ export default function createGame(width, height) {
   const state = {
     players: {},
     fruits: {},
+    screen: {
+      width,
+      height,
+    },
   };
 
   function addPlayer(command) {
@@ -50,7 +54,7 @@ export default function createGame(width, height) {
       },
 
       ArrowRight(player) {
-        if (player.x + 1 < width) {
+        if (player.x + 1 < state.screen.width) {
           console.log(
             `game.movePlayer().ArrowRight() -> Moving ${command.playerId} with ${command.keyPressed}`
           );
@@ -59,7 +63,7 @@ export default function createGame(width, height) {
       },
 
       ArrowDown(player) {
-        if (player.y + 1 < height) {
+        if (player.y + 1 < state.screen.height) {
           console.log(
             `game.movePlayer().ArrowDown() -> ${command.playerId} with ${command.keyPressed}`
           );

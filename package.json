@@ -1,0 +1,23 @@
+{
+  "name": "santo-game-websocket",
+  "version": "1.0.0",
+  "description": "Game with JavaScript + Node.js + Socket.io",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kalangoti/santo-game-websocket.git"
+  },
+  "author": "Anderson Santo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kalangoti/santo-game-websocket/issues"
+  },
+  "homepage": "https://github.com/kalangoti/santo-game-websocket#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
